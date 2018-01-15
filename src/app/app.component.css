@@ -1,0 +1,19 @@
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+    
+}
+a:active{
+    
+    color: inherit;
+}
+a:visited{
+    text-decoration: none;
+}

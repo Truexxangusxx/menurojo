@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); 
+    font-weight: 200;
+    font-style: italic;
+}
+
+#claro_app_id{
+	font-family: 'Roboto';
+	height: 80px;
+	border: 1px solid #b4b4b4;
+	/*margin: 1px 10px 10px 10px;*/
+	margin: 10px;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	padding: 12px 10px 12px 10px;
+	-webkit-box-shadow: 2px 2px 24px 2px rgba(33,33,33,0.49);
+	-moz-box-shadow: 2px 2px 24px 2px rgba(33,33,33,0.49);
+	box-shadow: 2px 2px 24px 2px rgba(33,33,33,0.49);
+}
+
+#claro_app_id > .descarga-button{
+	height: 100%;
+	padding: 0;
+	padding-top: 8px;
+	float: right;
+}
+
+#claro_app_id > .descarga-button > a{
+	margin: auto;
+	float: right;
+	font-weight: 500;
+	font-family: 'Roboto';
+	font-size: 16px;
+	height: 37px;
+	width: 95px;
+	background-color: #f08226 !important;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#claro_app_id > .descarga-mensaje{
+	height: 100%;
+    margin-left: -10px;
+    margin-top: -5px;
+    /* padding-top: 2%; */
+    font-size: 16px;
+    padding-right: 0;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+
+#claro_app_id > .descarga-mensaje >  .descarga-titulo{
+	color: #212121;
+	font-weight: 600;
+	font-size: 14px;
+    font-family: Roboto;
+	padding: 0;
+}
+
+#claro_app_id > .descarga-mensaje > .descarga-texto{
+    font-family: Roboto;
+	font-size: 12px;
+	color: #716767;
+	font-weight: 400;
+	line-height: 14px;
+	padding: 0;
+}
+
+#claro_app_id > .descarga-icono{
+	height: 100%;
+	padding: 0;
+	width: 50px;
+}
+
+#claro_app_id > .descarga-icono > img{
+	height: 47px;
+	margin: auto;
+	margin-top: 6px;
+	width: 47px;
+}
+
+#claro_app_id > .descarga-close{
+	color: #1F97AE !important;
+	position: absolute;
+	margin-top: -12px;
+	margin-left: -5px;
+	font-size: 18px;
+}
+
+@media(min-width: 500px) {
+    #claro_app_id{
+		display: none
+	}
+}
+
+/*
+ ** IMPORTANT: DO NOT REMOVE THIS
+ ** OID: be43bf78-95aa-43d7-b670-d049c5129278
+ ** Publish date: May 12, 2017, 7:48:18 PM EDT
+ ** Last modified: May 12, 2017, 7:50:03 PM EDT
+ */
