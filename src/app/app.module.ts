@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ContenedorComponent } from './contenedor/contenedor.component';
 import { MenupersonasComponent } from './menupersonas/menupersonas.component';
 import { PaginaComponent } from './pagina/pagina.component';
+import { TicketComponent } from './ticket/ticket.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PaginaComponent } from './pagina/pagina.component';
     AppComponent,
     ContenedorComponent,
     MenupersonasComponent,
-    PaginaComponent
+    PaginaComponent,
+    TicketComponent
   ],
   imports: [
     BrowserModule

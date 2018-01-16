@@ -260,3 +260,48 @@ a.desplegar {
     animation: on-opacity 0.5s ease-out;
     visibility: visible;
 }
+
+/*Tercer nivel*******************************************************************************************************************/
+
+.tercer-menu {
+    position: absolute;
+    width: 100%;
+    background: #da272c;
+    border-top: white 1px solid;
+    color: white;
+    top: 60px;
+    visibility: hidden;
+}
+
+.boton-tercer {
+    color: white;
+    height: 57px;
+    border-bottom: 1px solid #666666;
+    background: #ffffff;
+    color: #000000;
+}
+
+.boton-tercer .row {
+    height: 57px;
+    -ms-display: flex;
+    display: flex;
+    /* alineacion vertical */
+    align-items: center;
+}
+
+.boton-tercer .texto {
+    text-align: center;
+    font-size: 16px;
+    color:#68b8c8;
+}
+.boton-tercer .texto.principal {
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.boton-tercer i {
+    text-align: center;
+    font-size: 15px;
+}
