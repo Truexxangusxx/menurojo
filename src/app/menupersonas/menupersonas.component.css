@@ -1,8 +1,39 @@
-menupersonas{
-    z-index: 10;
+menupersonas {
+    z-index: 50;
 }
 
+
+/*opacidad de la pagina*******************************************************************************************************************/
+
+.bloque-opacity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 45;
+    visibility: hidden;
+    opacity: 0.6;
+    top: 60px;
+}
+
+@keyframes on-opacity {
+    from {
+        opacity: 0;
+        visibility: visible;
+    }
+    to {
+        opacity: 0.6;
+    }
+}
+
+.bloque-opacity.on-opacity {
+    animation: on-opacity 0.5s ease-out;
+    visibility: visible;
+}
+
+
 /*barra roja*******************************************************************************************************************/
+
 .barraroja {
     height: 60px;
     background-color: #da272c;
@@ -57,6 +88,7 @@ a.desplegar {
     border-top: white 1px solid;
     color: white;
     visibility: hidden;
+    z-index: 50;
 }
 
 @keyframes toggleOn {
@@ -131,6 +163,7 @@ a.desplegar {
     color: white;
     top: 60px;
     visibility: hidden;
+    z-index: 50;
 }
 
 .boton-segundo {
@@ -152,8 +185,9 @@ a.desplegar {
 .boton-segundo .texto {
     text-align: center;
     font-size: 16px;
-    color:#68b8c8;
+    color: #68b8c8;
 }
+
 .boton-segundo .texto.principal {
     text-align: center;
     font-size: 16px;
@@ -234,32 +268,6 @@ a.desplegar {
     animation: slideOutRight 0.5s ease-out;
 }
 
-/*opacidad de la pagina*******************************************************************************************************************/
-
-.bloque-opacity{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #000000;
-    z-index: -1;
-    visibility: hidden;
-    opacity: 0.6;
-}
-
-@keyframes on-opacity {
-    from {
-        opacity: 0;
-        visibility: visible;
-    }
-    to {
-        opacity: 0.6;
-    }
-}
-
-.bloque-opacity.on-opacity{
-    animation: on-opacity 0.5s ease-out;
-    visibility: visible;
-}
 
 /*Tercer nivel*******************************************************************************************************************/
 
@@ -271,6 +279,7 @@ a.desplegar {
     color: white;
     top: 60px;
     visibility: hidden;
+    z-index: 50;
 }
 
 .boton-tercer {
@@ -292,8 +301,9 @@ a.desplegar {
 .boton-tercer .texto {
     text-align: center;
     font-size: 16px;
-    color:#68b8c8;
+    color: #68b8c8;
 }
+
 .boton-tercer .texto.principal {
     text-align: center;
     font-size: 16px;
@@ -304,4 +314,29 @@ a.desplegar {
 .boton-tercer i {
     text-align: center;
     font-size: 15px;
+}
+
+
+/*Ocultar segundo nivel*******************************************************************************************************************/
+
+.segundo-menu.outleft {
+    animation: slideOutLeft 0.5s ease-out;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.tercer-menu.left {
+    animation: slideInRight 0.5s ease-out;
+    visibility: visible;
+}
+
+
+/*Ocultar tercer nivel*******************************************************************************************************************/
+
+.segundo-menu.inright {
+    animation: slideInLeft 0.5s ease-out;
+    visibility: visible;
+}
+
+.tercer-menu.right {
+    animation: slideOutRight 0.5s ease-out;
 }
