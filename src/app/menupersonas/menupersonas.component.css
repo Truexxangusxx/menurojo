@@ -1,9 +1,14 @@
+/* #region superpuesto*/
+
 menupersonas {
     z-index: 50;
 }
 
 
-/*opacidad de la pagina*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region opacidad de la pagina*/
 
 .bloque-opacity {
     position: absolute;
@@ -32,7 +37,10 @@ menupersonas {
 }
 
 
-/*barra roja*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region barra roja*/
 
 .barraroja {
     height: 60px;
@@ -58,7 +66,7 @@ menupersonas {
 }
 
 .barraroja .derecha>a {
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 a.menu-logo {
@@ -79,7 +87,10 @@ a.desplegar {
 }
 
 
-/*menu que aparece*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region menu que aparece*/
 
 .contenido-menu {
     position: absolute;
@@ -124,7 +135,10 @@ a.desplegar {
 }
 
 
-/*menu botones primer nivel*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region menu botones primer nivel*/
 
 .boton-primer {
     color: white;
@@ -144,16 +158,19 @@ a.desplegar {
 
 .boton-primer .texto {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .boton-primer i {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 
-/*menu botones segundo nivel*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region botones segundo nivel*/
 
 .segundo-menu {
     position: absolute;
@@ -167,41 +184,72 @@ a.desplegar {
 }
 
 .boton-segundo {
-    color: white;
     height: 57px;
     border-bottom: 1px solid #666666;
     background: #ffffff;
     color: #000000;
 }
 
+.boton-segundo.primero {
+    background: #ffffff;
+}
+
+.boton-segundo.segundo {
+    background: #666666;
+}
+
+.boton-segundo.tercero {
+    background: #000000;
+}
+
 .boton-segundo .row {
     height: 57px;
     -ms-display: flex;
     display: flex;
-    /* alineacion vertical */
     align-items: center;
 }
 
 .boton-segundo .texto {
     text-align: center;
-    font-size: 16px;
+    font-size: 21px;
     color: #68b8c8;
+}
+
+.boton-segundo.primero .texto {
+    color: #666666;
+}
+
+.boton-segundo.primero i {
+    color: #666666;
+}
+
+.boton-segundo.segundo .texto {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.boton-segundo.tercero .texto {
+    color: #ffffff;
+    opacity: 0.5;
 }
 
 .boton-segundo .texto.principal {
     text-align: center;
-    font-size: 16px;
+    font-size: 27px;
     color: #000000;
     font-weight: bold;
 }
 
 .boton-segundo i {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 
-/*Efecto ocultar menu principal al seleccionar*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region efecto ocultar menu principal al seleccionar*/
 
 @keyframes slideOutLeft {
     from {
@@ -236,7 +284,10 @@ a.desplegar {
 }
 
 
-/*Efecto regresar menu principal*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region efecto regresar menu principal*/
 
 @keyframes slideInLeft {
     from {
@@ -269,7 +320,10 @@ a.desplegar {
 }
 
 
-/*Tercer nivel*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region tercer nivel*/
 
 .tercer-menu {
     position: absolute;
@@ -300,24 +354,27 @@ a.desplegar {
 
 .boton-tercer .texto {
     text-align: center;
-    font-size: 16px;
+    font-size: 21px;
     color: #68b8c8;
 }
 
 .boton-tercer .texto.principal {
     text-align: center;
-    font-size: 16px;
+    font-size: 27px;
     color: #000000;
     font-weight: bold;
 }
 
 .boton-tercer i {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 
-/*Ocultar segundo nivel*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region ocultar seguno nivel*/
 
 .segundo-menu.outleft {
     animation: slideOutLeft 0.5s ease-out;
@@ -330,7 +387,10 @@ a.desplegar {
 }
 
 
-/*Ocultar tercer nivel*******************************************************************************************************************/
+/* #endregion */
+
+
+/* #region ocultar tercer nivel*/
 
 .segundo-menu.inright {
     animation: slideInLeft 0.5s ease-out;
@@ -340,3 +400,6 @@ a.desplegar {
 .tercer-menu.right {
     animation: slideOutRight 0.5s ease-out;
 }
+
+
+/* #endregion */
