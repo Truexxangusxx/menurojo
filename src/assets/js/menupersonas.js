@@ -25,6 +25,7 @@ $(document).ready(function () {
     });
 
     $(".ir-izquierda").click(function(e){
+        e.preventDefault();
         $(".contenido-menu").addClass('left');
         $(".segundo-menu."+$(this).attr("menu")).addClass('left');
         $(".contenido-menu").removeClass('right');
@@ -32,6 +33,7 @@ $(document).ready(function () {
     });
     
     $(".regresar-derecha").click(function(e){
+        e.preventDefault();
         $(".segundo-menu").removeClass('inright');
         $(".contenido-menu").removeClass('left');
         $(".segundo-menu").removeClass('left');
@@ -40,6 +42,7 @@ $(document).ready(function () {
     });
 
     $(".ir-tercero").click(function(e){
+        e.preventDefault();
         $(".segundo-menu").removeClass('inright');
         $(".segundo-menu").addClass('outleft');
         $(".tercer-menu."+$(this).attr("menu")).removeClass('right');
@@ -47,6 +50,7 @@ $(document).ready(function () {
     });
 
     $(".regresar-tercero").click(function(e){
+        e.preventDefault();
         $(".segundo-menu").removeClass('outleft');
         $(this).parent().removeClass('left');
         $(".segundo-menu."+$(this).attr("menu")).addClass('inright');
