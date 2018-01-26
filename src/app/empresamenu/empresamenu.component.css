@@ -1,0 +1,479 @@
+/* #region superpuesto*/
+
+menupersonas {
+    z-index: 50;
+}
+
+
+/* #endregion */
+
+
+/* #region opacidad de la pagina*/
+
+.bloque-opacity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 45;
+    visibility: hidden;
+    opacity: 0.6;
+    top: 60px;
+}
+
+@keyframes on-opacity {
+    from {
+        opacity: 0;
+        visibility: visible;
+    }
+    to {
+        opacity: 0.6;
+    }
+}
+
+.bloque-opacity.on-opacity {
+    animation: on-opacity 0.5s ease-out;
+    visibility: visible;
+}
+
+
+/* #endregion */
+
+
+/* #region barra roja*/
+
+.barraroja {
+    height: 60px;
+    background-color: #da272c;
+    color: white;
+    font-size: 25px;
+}
+
+.barraroja .container {
+    padding-top: 15px;
+}
+
+.barraroja a {
+    color: white;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.barraroja .derecha>a {
+    margin-right: 15px;
+}
+
+a.menu-logo {
+    -ms-display: flex;
+    display: flex;
+    align-items: center;
+}
+
+#menu-logo {
+    height: 25px;
+}
+
+a.desplegar {
+    display: block;
+    width: 25px;
+    margin-right: 15px;
+    float: left;
+}
+
+
+/* #endregion */
+
+
+/* #region efecto menu que aparece*/
+
+.contenido-menu {
+    position: absolute;
+    width: 100%;
+    background: #da272c;
+    border-top: white 1px solid;
+    color: white;
+    visibility: hidden;
+    z-index: 50;
+}
+
+@keyframes toggleOn {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 60px;
+    }
+}
+
+@keyframes toggleOff {
+    from {
+        visibility: visible;
+        opacity: 1;
+        top: 60px;
+        ;
+    }
+    to {
+        opacity: 0;
+        top: 100%;
+    }
+}
+
+.contenido-menu.on {
+    animation: toggleOn 0.5s ease-out;
+    visibility: visible;
+}
+
+.contenido-menu.off {
+    animation: toggleOff 0.5s ease-out;
+    opacity: 0;
+}
+
+
+/* #endregion */
+
+
+/* #region menu botones primer nivel*/
+
+.boton-primer {
+    color: white;
+    height: 151px;
+    border-bottom: 1px solid white;
+}
+
+.boton-primer .row {
+    height: 151px;
+    -ms-display: flex;
+    display: flex;
+    /* alineacion vertical */
+    align-items: center;
+    /* alineacion horizontal */
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .boton-primer .texto {
+        text-align: center;
+        font-size: 18px;
+    }
+    .boton-primer i {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .boton-primer .texto {
+        text-align: center;
+        font-size: 25px;
+    }
+    .boton-primer i {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region botones segundo nivel*/
+
+.segundo-menu {
+    position: absolute;
+    width: 100%;
+    background: #da272c;
+    border-top: white 1px solid;
+    color: white;
+    top: 60px;
+    visibility: hidden;
+    z-index: 50;
+}
+
+.boton-segundo.primero {
+    background: #ffffff;
+}
+
+.boton-segundo.segundo {
+    background: #666666;
+}
+
+.boton-segundo.tercero {
+    background: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+    .boton-segundo {
+        height: 57px;
+        border-bottom: 1px solid #666666;
+        background: #ffffff;
+        color: #000000;
+    }
+    .boton-segundo .row {
+        height: 57px;
+        -ms-display: flex;
+        display: flex;
+        align-items: center;
+    }
+    .boton-segundo .texto {
+        text-align: center;
+        font-size: 16px;
+        color: #68b8c8;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .boton-segundo {
+        height: 65px;
+        border-bottom: 1px solid #666666;
+        background: #ffffff;
+        color: #000000;
+    }
+    .boton-segundo .row {
+        height: 65px;
+        -ms-display: flex;
+        display: flex;
+        align-items: center;
+    }
+    .boton-segundo .texto {
+        text-align: center;
+        font-size: 20px;
+        color: #68b8c8;
+    }
+}
+
+.boton-segundo.primero .texto {
+    color: #666666;
+}
+
+.boton-segundo.primero i {
+    color: #666666;
+}
+
+.boton-segundo.segundo .texto {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.boton-segundo.tercero .texto {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 767px) {
+    .boton-segundo .texto.principal {
+        text-align: center;
+        font-size: 20px;
+        color: #000000;
+        font-weight: 500;
+    }
+    .boton-segundo i {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .boton-segundo .texto.principal {
+        text-align: center;
+        font-size: 25px;
+        color: #000000;
+        font-weight: 500;
+    }
+    .boton-segundo i {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region efecto ocultar menu principal al seleccionar*/
+
+@keyframes slideOutLeft {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        visibility: hidden;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        top: 59px;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        top: 60px;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.contenido-menu.left {
+    animation: slideOutLeft 0.5s ease-out;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.segundo-menu.left {
+    animation: slideInRight 0.5s ease-out;
+    visibility: visible;
+}
+
+
+/* #endregion */
+
+
+/* #region efecto regresar menu principal*/
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(100%, 0, 0);
+        visibility: hidden;
+    }
+}
+
+.contenido-menu.right {
+    animation: slideInLeft 0.5s ease-out;
+    visibility: visible;
+}
+
+.segundo-menu.right {
+    animation: slideOutRight 0.5s ease-out;
+}
+
+
+/* #endregion */
+
+
+/* #region tercer nivel*/
+
+.tercer-menu {
+    position: absolute;
+    width: 100%;
+    background: #da272c;
+    border-top: white 1px solid;
+    color: white;
+    top: 60px;
+    visibility: hidden;
+    z-index: 50;
+}
+
+@media only screen and (max-width: 767px) {
+    .boton-tercer {
+        color: white;
+        height: 57px;
+        border-bottom: 1px solid #666666;
+        background: #ffffff;
+        color: #000000;
+    }
+    .boton-tercer .row {
+        height: 57px;
+        -ms-display: flex;
+        display: flex;
+        align-items: center;
+    }
+    .boton-tercer .texto {
+        text-align: center;
+        font-size: 16px;
+        color: #68b8c8;
+    }
+    .boton-tercer .texto.principal {
+        text-align: center;
+        font-size: 20px;
+        color: #000000;
+        font-weight: 500;
+    }
+    .boton-tercer i {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .boton-tercer {
+        color: white;
+        height: 65px;
+        border-bottom: 1px solid #666666;
+        background: #ffffff;
+        color: #000000;
+    }
+    .boton-tercer .row {
+        height: 65px;
+        -ms-display: flex;
+        display: flex;
+        align-items: center;
+    }
+    .boton-tercer .texto {
+        text-align: center;
+        font-size: 20px;
+        color: #68b8c8;
+    }
+    .boton-tercer .texto.principal {
+        text-align: center;
+        font-size: 25px;
+        color: #000000;
+        font-weight: 500;
+    }
+    .boton-tercer i {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region ocultar seguno nivel*/
+
+.segundo-menu.outleft {
+    animation: slideOutLeft 0.5s ease-out;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.tercer-menu.left {
+    animation: slideInRight 0.5s ease-out;
+    visibility: visible;
+}
+
+
+/* #endregion */
+
+
+/* #region ocultar tercer nivel*/
+
+.segundo-menu.inright {
+    animation: slideInLeft 0.5s ease-out;
+    visibility: visible;
+}
+
+.tercer-menu.right {
+    animation: slideOutRight 0.5s ease-out;
+}
+
+
+/* #endregion */

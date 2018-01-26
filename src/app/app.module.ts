@@ -9,6 +9,7 @@ import { MenupersonasComponent } from './menupersonas/menupersonas.component';
 import { PaginaComponent } from './pagina/pagina.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { NegociomenuComponent } from './negociomenu/negociomenu.component';
+import { EmpresamenuComponent } from './empresamenu/empresamenu.component';
 
 
 @NgModule({
@@ -18,18 +19,23 @@ import { NegociomenuComponent } from './negociomenu/negociomenu.component';
     MenupersonasComponent,
     PaginaComponent,
     TicketComponent,
-    NegociomenuComponent
+    NegociomenuComponent,
+    EmpresamenuComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {
-        path: 'negociomenu',
+        path: 'negocios',
         component: NegociomenuComponent
       },
       {
         path: '',
         component: MenupersonasComponent
+      },
+      {
+        path: 'empresas',
+        component: EmpresamenuComponent
       },
     ])
   ],
